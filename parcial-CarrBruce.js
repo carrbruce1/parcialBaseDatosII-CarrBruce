@@ -190,17 +190,16 @@ db.cafes_especiales.insertMany([
 //  Ejercicio 2
 // 2) Buscar cuántos cafés contienen chocolate entre sus ingredientes.
 
-db.cafes_especiales.find({
-    ingredientes: { $in: ["chocolate"]}
-})
+db.cafes_especiales.find({ ingredientes: "chocolate" })
 
 // Ejercicio 3
 // 3) Buscar cuántos cafés son de tipo “cold brew”· y contienen “vainilla” entre sus ingredientes.
 
 db.cafes_especiales.find({
-    tipo: "cold blew",
-    ingredientes: { $in: ['vainilla']}
+  tipo: "cold brew",
+  ingredientes: "vainilla"
 })
+
 
 // Ejercicio 4
 // 4) Listar tipo y peso de los cafés que tienen una intensidad “media”.
